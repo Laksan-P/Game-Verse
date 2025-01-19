@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse FAQs - Submissions</title>
+
+    <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #0B192C;
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .submission {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .submission h3 {
+            margin: 0 0 10px;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let submissionsContainer = document.getElementById('submissions-container');
+            let submissions = JSON.parse(localStorage.getItem('submissions')) || [];
+
+            if (submissions.length === 0) {
+                submissionsContainer.innerHTML = '<p>No submissions yet.</p>';
+            } else {
+                submissions.forEach((submission, index) => {
+                    const div = document.createElement('div');
+                    div.classList.add('submission');
+                    div.innerHTML = `
+                        <h3>Submission #${index + 1}</h3>
+                        <p><strong>Question:</strong> ${submission.question}</p>
+                        <p><strong>Email:</strong> ${submission.email}</p>
+                        <p><strong>Contact:</strong> ${submission.contact}</p>
+                    `;
+                    submissionsContainer.appendChild(div);
+                });
+            }
+
+            // Clear previous submissions after loading the page
+            localStorage.setItem('submissions', JSON.stringify([]));
+        });
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Submissions</h1>
+        <div id="submissions-container"></div>
+    </div>
+</body>
+</html>
