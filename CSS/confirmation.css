@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 100vw;
+  margin: auto;
+}
+
+/* Header container */
+header {
+  width: 100%;
+  background-color: #0B192C;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 1px;
+  top: 0;
+  z-index: 100;
+}
+
+/* Navbar layout with logo left-aligned */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Logo styling */
+.logo {
+  width: 95px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+
+  .logo {
+    width: 15%; 
+    padding-left: 5px;   
+  }
+}
+
+h1 {
+  margin: 20px;
+  color: #0B192C;
+  font-family: Georgia;
+  font-size: 38px;
+}
+
+#message {
+  font-size: 20px;
+  text-align: center;
+  font-family: Georgia;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;      
+    text-align: center;   
+    margin: 15px;
+    font-family: Georgia;
+  }
+  
+  #message {
+    font-size: 16 px;    
+    padding: 0 10px;     
+    font-family: Georgia;  
+  }
+}
+  

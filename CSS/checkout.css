@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 100vw;
+  margin: auto;
+}
+
+/* Header container */
+header {
+  width: 100%;
+  background-color: #0B192C;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 1px;
+  top: 0;
+  z-index: 100;
+}
+
+/* Navbar layout with logo left-aligned */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Logo styling */
+.logo {
+  width: 95px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+
+  .logo {
+    width: 15%; 
+    padding-left: 5px;   
+  }
+}
+
+h2 {
+  margin: 10px;
+  color: #0B192C;
+}
+
+table, th, td {
+  width: 58.5%;
+  border: 1px solid #0B192C;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.form-section {
+  margin-top: 30px;
+  color: #0B192C;
+}
+
+.form-grid {
+  color: #0B192C;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(885px, 2fr));
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #0B192C;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 58%;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 10px;
+  height: 40px;
+  background-color: #0B192C;
+  color: white;
+  border: none; /* Removes border */
+  outline: none; /* Removes the outline */
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+button:hover {
+  background-color: #EEEEEE;
+  color: #008394;
+}
+
+input::placeholder {
+  color: #20334e;
+  font-style: italic;
+}
+
+#expiry , #cvv {
+  width: 49.7%;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  table, th, td {
+    width: 90%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .form-grid {
+    padding: 0 70px;
+    grid-template-columns: 1fr;
+    width: 100%;
+    transform: translateX(-15%);
+  }
+
+  input, textarea {
+    font-size: 14px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  .form-section {
+    padding: 0 10px;
+  }
+
+  #expiry, #cvv {
+    width: 100%; /* Stack expiry and cvv */
+    margin-bottom: 15px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+    padding: 14px 10px;
+  }
+
+  .button-group button,
+  button {
+    font-size: 16px;
+    height: 38px;
+    margin: 10px 0;
+  }
+}
