@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - Homepage</title>
+    
+    <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<!--Header-->
+    <header>
+        <div class="navbar">
+            <img src="Images/Logo.jpg" alt="Logo" class="logo">
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="upcoming-games.html">Upcoming Games</a>
+                <a href="consoles.html">Consoles</a>
+                <a href="gaming-peripherals.html">Gaming Peripherals</a>
+                <!-- Components with Clickable Dropdown -->
+                <div class="dropdown">
+                    <a href="components.html" class="dropbtn" onclick="toggleDropdown(event)">Components</a>
+                    <div class="dropdown-content" id="dropdownMenu">
+                        <a href="processors.html">Processors</a>
+                        <a href="graphics.html">Graphic Cards</a>
+                        <a href="motherboards.html">Motherboards</a>
+                        <a href="memory.html">Memory (RAM)</a>
+                        <a href="storage.html">Storage Devices</a>
+                    </div>
+                </div>
+                    <a href="about.html">About Us & Contact Us</a>
+                    <a href="faq.html">FAQs</a>
+            </div>
+                <!-- Top Right Icons in Header -->
+                <div class="header-icons">
+                    <a href="favorites.html" class="header-icon"><i class="fas fa-heart"></i></a>
+                    <a href="cart.html" class="header-icon"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+        </div>
+        <script src="script.js"></script>
+    </header>
+
+<!--Main-->
+    <main>
+        <div class="featured-image">
+            <img src="Images/h1.jpg" alt="Game Controller">
+            <div class="overlay-text">Welcome to GameVerse</div>
+        </div>
+
+        <div class="Main-content">
+            <p>Welcome to GameVerse!, where gamers gather to share, connect, and celebrate their passion for
+            gaming! Our site is a vibrant community built for players of all levels. Discover engaging content and the
+            latest updates, or chat with like-minded enthusiasts in our active forums. Stay informed about your
+            favorite games, learn from others, and share your adventures. This is your space to geek out, so let’s
+            play!</p>
+        </div>
+
+        <section class="content">
+            <ul>
+                <li>Wide Selection of Games: Dive into our extensive library of games, featuring the latest releases and
+                    timeless classics. From RPGs to strategy games, action adventure, and more, we ensure that there’s
+                    always something to keep you entertained.</li>
+                <li>Exclusive Discounts & Deals: Enjoy unbeatable offers on your favorite games! With frequent sales,
+                    bundles, and promotions, on gaming products also you can get affordable gaming experiences.</li>
+                <li>Community & Support: Join a passionate community of gamers and engage in discussions,
+                    tournaments, and multiplayer experiences. Our dedicated support team is always available to help with
+                    technical issues, ensuring a smooth and enjoyable gaming journey.</li>
+            </ul>
+        </section>
+
+        <div class="Main-content">
+            <p>Explore, compete, and connect—your next adventure starts here.</p>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <h2>Trending Now</h2>
+                <div class="trending-item">
+                    <img src="Images/T1.jpg" alt="Trending 1">
+                    <p>Call of Duty: Modern Warfare is trending for its immersive campaign, realistic graphics, and engaging multiplayer modes, redefining military shooters with enhanced mechanics and intense gameplay.</p>
+                </div>
+                <div class="trending-item-02">
+                    <img src="Images/T2.jpg" alt="Trending 2">
+                    <p>Alan Wake: Remastered delivers enhanced visuals and refined gameplay of the iconic psychological thriller, captivating players with its gripping narrative, atmospheric design, and renewed accessibility.</p>
+                </div>
+                <div class="trending-item-03">
+                    <img src="Images/T3.jpg" alt="Trending 3">
+                    <p>Assassin's Creed Mirage: Returns to the series' roots with a focus on stealth, parkour, and narrative-driven gameplay, captivating fans nostalgic for classic Assassin's Creed experiences.</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <h2>Game Of The Month</h2>
+                <div class="game-of-the-month">
+                    <img src="Images/GOM.jpg" alt="Game of the Month">
+                    <div class="content">
+                        <p>Marvel's Spider-Man 2 offers thrilling gameplay as players control both Peter Parker and Miles Morales in an expansive, dynamic New York City.</p>
+                        <ol>
+                            <li>Dual Characters: Switch between Peter and Miles, each with unique powers.</li>
+                            <li>Vibrant Open World: A rich, interactive city full of activities.</li>
+                            <li>Regular Updates: New DLCs and challenges keep the game fresh.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!--Footer-->
+    <footer>
+        <div class="footer-logo">
+            <img src="Images/Logo.jpg" alt="Logo" width="100">
+        </div>
+        <div class="footer-content">
+            <h3>About Us</h3>
+            <p>GameVerse is your go-to hub for all things gaming! From news and reviews to tips and a vibrant community, we’re here to connect gamers worldwide. Join us and level up your gaming journey!</p>
+
+            <h3>Contact Us</h3>
+            <ul>
+                <li>E-mail:
+                <a href="mailto:laksanpushpakumar@gmail.com">laksanpushpakumar@gmail.com</a>
+                </li>
+                <li>Telephone:
+                <a href="tel:+94714385894">+94 71 438 5894</a>
+                </li>
+                <li>Location:
+                <a href="https://maps.app.goo.gl/zYvLhbT9u4DFDtjs7">Location</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us On</h3>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+                <a href="https://www.instagram.com/_._lakxhan_._/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100083904106775" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameVerse - Checkout</title>
+
+  <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/components.css">
+  <link rel="stylesheet" href="CSS/checkout.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+          <img src="Images/Logo.jpg" alt="Logo" class="logo">
+        </div>
+      </header>
+      
+
+  <h2>Order Summary</h2>
+  <table id="summaryTable">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody id="summaryBody"></tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3"><strong>Total</strong></td>
+        <td id="summaryTotal">LKR 0.00</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <div class="form-section">
+    <h3>Personal Information</h3>
+    <div class="form-grid">
+      <input type="text" id="fullName" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="tel" id="contactNumber" placeholder="Contact Number" required>
+    </div>
+  </div>
+  
+  <div class="form-section">
+    <h3>Delivery Information</h3>
+    <div class="form-grid">
+      <input type="text" id="street" placeholder="Street Address" required>
+      <input type="text" id="city" placeholder="City" required>
+      <input type="text" id="state" placeholder="State/Province" required>
+      <input type="text" id="zip" placeholder="ZIP/Postal Code" required>
+      <input type="text" id="country" placeholder="Country" required>
+    </div>
+  </div>  
+
+  <div class="form-section">
+    <h3>Payment Information</h3>
+    <input type="text" id="cardHolder" placeholder="Card Holder Name" required>
+    <input type="text" id="cardNumber" placeholder="Card Number (16 digits)" required>
+    <input type="text" id="expiry" placeholder="Expiration Date (MM/YY)" required>
+    <input type="text" id="cvv" placeholder="CVV Code (3 digits)" required>
+  </div>
+
+  <div class="button-group">
+    <button onclick="processPayment()">Pay</button>
+    <button onclick="window.location.href='cart.html'">Back to Cart</button>
+  </div>
+  
+  <script src="checkout.js"></script>
+
+</body>
+</html>

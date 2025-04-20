@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - Consoles</title>
+
+    <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/consoles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<!--Header-->
+    <header>
+        <div class="navbar">
+            <img src="Images/Logo.jpg" alt="Logo" class="logo">
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="upcoming-games.html">Upcoming Games</a>
+                <a href="consoles.html">Consoles</a>
+                <a href="gaming-peripherals.html">Gaming Peripherals</a>
+                <!-- Components with Clickable Dropdown -->
+                <div class="dropdown">
+                    <a href="components.html" class="dropbtn" onclick="toggleDropdown(event)">Components</a>
+                    <div class="dropdown-content" id="dropdownMenu">
+                        <a href="processors.html">Processors</a>
+                        <a href="graphics.html">Graphic Cards</a>
+                        <a href="motherboards.html">Motherboards</a>
+                        <a href="memory.html">Memory (RAM)</a>
+                        <a href="storage.html">Storage Devices</a>
+                    </div>
+                </div>
+                <a href="about.html">About Us & Contact Us</a>
+                <a href="faq.html">FAQs</a>
+            </div>
+            <!-- Top Right Icons in Header -->
+            <div class="header-icons">
+                <a href="favorites.html" class="header-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="header-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </header>
+
+<!--Main-->
+    <main>
+            <div class="content">
+                <div class="text-section">
+                    <p>Gaming consoles are at the heart of modern entertainment, offering immersive experiences for all types
+                        of players. At GameVerse, we stock the latest models from top brands like PlayStation, Xbox, and
+                        Nintendo, ensuring access to the best in gaming technology. These consoles deliver stunning visuals,
+                        smooth performance, and exclusive titles for unforgettable gaming adventures.</p>
+                    <p>Our selection includes the PlayStation 5, Xbox Series X|S, and Nintendo Switch OLED, each designed to
+                        cater to different gaming styles. The PlayStation 5 offers breathtaking 4K graphics and fast load times,
+                        while the Xbox Series X provides unmatched power and a vast game library. For versatile play, the
+                        Nintendo Switch OLED is ideal, letting gamers switch between handheld and docked modes effortlessly.</p>
+                    <p>At GameVerse, we go beyond just selling consoles. We provide setup assistance, trade-in options, and
+                        exclusive membership perks, including discounts and early access to new games. With a wide range of
+                        accessories and ongoing promotions, Game Verse is your one-stop shop for all gaming needs!</p>
+                </div>
+                <div class="image-grid">
+                    <div class="image-container">
+                        <img src="Images/ps5.png" alt="Image 1">
+                        <div class="hover-text">
+                            <h1>PlayStation 5 Console</h1>
+                            <div class="hover-paragraph">
+                                <h2>Special Features: </h2>
+                                <p>Lightning Speed: Experience unparalleled performance with a custom CPU, GPU, and SSD featuring Integrated I/O.</p>
+                                <p>Stunning Games: Enjoy incredible graphics and innovative PS5 features.</p>
+                                <p>Immersive Gameplay: Dive deeper with haptic feedback, adaptive triggers, and 3D Audio.</p>
+                                <div class="parag">
+                                    <p>Prize: LKR 234,400</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="Images/xbox.jpg" alt="Image 2">
+                        <div class="hover-text">
+                            <h1>Xbox Series X|S</h1>
+                            <div class="hover-paragraph">
+                                <h2>Special Features: </h2>
+                                <p>Powerful Performance: Enjoy 4K gaming at up to 120 FPS with a custom CPU, GPU, and SSD.</p>
+                                <p>Quick Resume: Seamlessly switch between multiple games in seconds.</p>
+                                <p>Game Pass Integration: Access a vast library of games with Xbox Game Pass</p>
+                                <div class="parag">
+                                    <p>Prize: LKR 237,500</p>
+                                </div>
+                            </div>                         
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="Images/Nintendo Switch OLED.avif" alt="Image 3">
+                        <div class="hover-text">
+                            <h1>Nintendo Switch OLED</h1>
+                            <div class="hover-paragraph">
+                                <h2>Special Features: </h2>
+                                <p>Portability & Versatility: Play anywhere with handheld, tabletop, or TV modes (e.g., Nintendo Switch).</p>
+                                <p>Exclusive Games: Access beloved franchises like Mario, Zelda, and Pokémon.</p>
+                                <p>Innovative Gameplay: Unique features like motion controls, Joy-Con versatility, and Labo DIY kits.</p>
+                                <div class="parag">
+                                    <p>Prize: LKR 128,500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="Images/Lenovo Legion.jpg" alt="Image 4">
+                        <div class="hover-text">
+                            <h1>Lenovo Legion Go 8APU1</h1>
+                            <div class="hover-paragraph">
+                                <h2>Special Features: </h2>
+                                <p>High Performance: Top-tier processors and GPUs for smooth gaming.</p>
+                                <p>Efficient Cooling: Coldfront tech ensures optimal temperatures.</p>
+                                <p>RGB Lighting: Customizable for a personalized look.</p>
+                                <div class="parag">   
+                                    <p>Prize: LKR 349,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+<!--Footer-->
+    <footer>
+        <div class="footer-logo">
+            <img src="Images/Logo.jpg" alt="Logo" width="100">
+        </div>
+        <div class="footer-content">
+            <h3>About Us</h3>
+            <p>GameVerse is your go-to hub for all things gaming! From news and reviews to tips and a vibrant community, we’re here to connect gamers worldwide. Join us and level up your gaming journey!</p>
+
+            <h3>Contact Us</h3>
+            <ul>
+                <li>E-mail:
+                <a href="mailto:laksanpushpakumar@gmail.com">laksanpushpakumar@gmail.com</a>
+                </li>
+                <li>Telephone:
+                <a href="tel:+94714385894">+94 71 438 5894</a>
+                </li>
+                <li>Location:
+                <a href="https://maps.app.goo.gl/zYvLhbT9u4DFDtjs7">Location</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us On</h3>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+                <a href="https://www.instagram.com/_._lakxhan_._/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100083904106775" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

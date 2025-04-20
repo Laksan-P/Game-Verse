@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - Gaming Peripherals</title>
+
+    <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/gaming-peripherals.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<!--Header-->
+    <header>
+        <div class="navbar">
+            <img src="Images/Logo.jpg" alt="Logo" class="logo">
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="upcoming-games.html">Upcoming Games</a>
+                <a href="consoles.html">Consoles</a>
+                <a href="gaming-peripherals.html">Gaming Peripherals</a>
+                <!-- Components with Clickable Dropdown -->
+                <div class="dropdown">
+                    <a href="components.html" class="dropbtn" onclick="toggleDropdown(event)">Components</a>
+                    <div class="dropdown-content" id="dropdownMenu">
+                        <a href="processors.html">Processors</a>
+                        <a href="graphics.html">Graphic Cards</a>
+                        <a href="motherboards.html">Motherboards</a>
+                        <a href="memory.html">Memory (RAM)</a>
+                        <a href="storage.html">Storage Devices</a>
+                    </div>
+                </div>
+                <a href="about.html">About Us & Contact Us</a>
+                <a href="faq.html">FAQs</a>
+            </div>
+            <!-- Top Right Icons in Header -->
+            <div class="header-icons">
+                <a href="favorites.html" class="header-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="header-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </header>
+    
+<!--Main-->
+    <main>
+            <div class="content">
+                <div class="text-section">
+                    <p>Gaming peripherals enhance the gaming experience by providing more control, comfort, and immersion.
+                        Devices like gaming mice and keyboards are designed for precision, with customizable buttons, high DPI
+                        settings, and mechanical switches that improve responsiveness and accuracy.</p>
+                    <p>Headsets and speakers are crucial for immersive sound. Gaming headsets offer surround sound, noise
+                        cancellation, and built-in microphones for communication, while gaming speakers deliver high-quality
+                        audio to elevate the experience.</p>
+                    <p>Other peripherals, such as gaming chairs and monitors, focus on comfort and visual quality. Gaming
+                        chairs are ergonomically designed for long sessions, and gaming monitors feature high refresh rates and
+                        low response times for a competitive edge.</p>
+                </div>
+                <div class="image-grid">
+                    <div class="image-container">
+                        <img src="Images/Keyboard.jpg" alt="Image 1">
+                        <div class="hover-text">
+                            <h1>SteelSeries Apex Pro</h1>
+                            <div class="hover-paragraph">
+                                <h2>Special Features: </h2>
+                                <p>Dynamic Key Customization: Assign unique functions or macros to individual keys for improved productivity or gaming efficiency.</p>
+                                <p>Firmware Updates: Regular updates via SteelSeries Engine software ensure enhanced features and long-term support.</p>
+                                <p>Sleek Cable Routing: Built-in channels under the keyboard allow for clean and organized cable management.</p>
+                                <div class="parag">
+                                    <p>Prize: LKR 115,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="Images/mouse.jpg" alt="Image 2">
+                        <div class="hover-text">
+                            <h1>SteelSeries RIVAL 710</h1>
+                            <div class="hover-paragraph">
+                                <h2>Special Features: </h2>
+                                <p>OLED Display: Customizable screen for notifications and in-game stats.</p>
+                                <p>Ergonomic Design: Comfortable shape with a right-handed grip for long gaming sessions.</p>
+                                <p>Tactile Switches: Mechanical switches offering fast response and durability for competitive play.</p>
+                                <div class="parag">
+                                    <p>Prize: LKR 33,800</p>
+                                </div>
+                            </div>                         
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="Images/Headset.jpg" alt="Image 3">
+                        <div class="hover-text">
+                            <h1>XBOX Wireless Headset</h1>
+                            <div class="hover-paragraph">
+                                <h2>Special Features: </h2>
+                                <p>Direct Xbox Wireless & Bluetooth: Seamless connection to Xbox consoles and mobile devices.</p>
+                                <p>Immersive Sound: Supports Dolby Atmos, DTS Headphone:X, and Windows Sonic.</p>
+                                <p>Comfortable Design: Lightweight with intuitive ear cup dials for easy controls.</p>
+                                <div class="parag">   
+                                    <p>Prize: LKR 43,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="Images/monitor.jpg" alt="Image 4">
+                        <div class="hover-text">
+                            <h1>ASUS ROG Swift OLED PG34WCDM</h1>
+                            <div class="hover-paragraph">
+                                <h2>Special Features: </h2>
+                                <p>34" QD-OLED, 3440x1440, 240Hz for vivid colors and ultra-smooth gameplay.</p>
+                                <p>G-Sync and HDR10 for tear-free, vibrant visuals.</p>
+                                <p>Smart Cooling & Adjustable Design for longevity and comfort.</p>
+                                <div class="parag">   
+                                    <p>Prize: LKR 559,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+<!--Footer-->
+    <footer>
+        <div class="footer-logo">
+            <img src="Images/Logo.jpg" alt="Logo" width="100">
+        </div>
+        <div class="footer-content">
+            <h3>About Us</h3>
+            <p>GameVerse is your go-to hub for all things gaming! From news and reviews to tips and a vibrant community, we’re here to connect gamers worldwide. Join us and level up your gaming journey!</p>
+
+            <h3>Contact Us</h3>
+            <ul>
+                <li>E-mail:
+                <a href="mailto:laksanpushpakumar@gmail.com">laksanpushpakumar@gmail.com</a>
+                </li>
+                <li>Telephone:
+                <a href="tel:+94714385894">+94 71 438 5894</a>
+                </li>
+                <li>Location:
+                <a href="https://maps.app.goo.gl/zYvLhbT9u4DFDtjs7">Location</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us On</h3>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+                <a href="https://www.instagram.com/_._lakxhan_._/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100083904106775" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

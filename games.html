@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - Games</title>
+
+    <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/games.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<!--Header-->
+    <header>
+        <div class="navbar">
+            <img src="Images/Logo.jpg" alt="Logo" class="logo">
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="upcoming-games.html">Upcoming Games</a>
+                <a href="consoles.html">Consoles</a>
+                <a href="gaming-peripherals.html">Gaming Peripherals</a>
+                <!-- Components with Clickable Dropdown -->
+                <div class="dropdown">
+                    <a href="components.html" class="dropbtn" onclick="toggleDropdown(event)">Components</a>
+                    <div class="dropdown-content" id="dropdownMenu">
+                        <a href="processors.html">Processors</a>
+                        <a href="graphics.html">Graphic Cards</a>
+                        <a href="motherboards.html">Motherboards</a>
+                        <a href="memory.html">Memory (RAM)</a>
+                        <a href="storage.html">Storage Devices</a>
+                    </div>
+                </div>
+                <a href="about.html">About Us & Contact Us</a>
+                <a href="faq.html">FAQs</a>
+            </div>
+            <!-- Top Right Icons in Header -->
+            <div class="header-icons">
+                <a href="favorites.html" class="header-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="header-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </header>
+
+<!--Main-->
+    <main>
+        <div class="image-column">
+            <div class="image-heading">Black Myth: Wukong</div>
+            <div class="image-container">
+                <img src="Images/img1.jpg" alt="Image 1">
+                <div class="hover-text">
+                    <h1>Black Myth: Wukong</h1>
+                    <div class="hover-paragraph">
+                        <p>Description: Black Myth: Wukong is an action role-playing game (RPG) developed by Game Science, inspired by the classic Chinese novel "Journey to the West."</p>
+                        <p>Released date: August 20, 2024</p>
+                        <p>Platform: PlayStation 5 and Windows PC , An Xbox Series X/S</p>
+                        <p>Genres: Action role playing (action RPG), adventure game, fighting game</p>
+                        <p>Price: LKR 19200</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-heading">Need for Speed Unbound</div>
+            <div class="image-container">
+                <img src="Images/img2.jpg" alt="Image 2">
+                <div class="hover-text">
+                    <h1>Need for Speed Unbound</h1>
+                    <div class="hover-paragraph">
+                        <p>Need for Speed Unbound is a racing video game developed by Criterion Games and published by Electronic Arts.</p>
+                        <p>Released date: November 29, 2022</p>
+                        <p>Platform: PlayStation 5, Windows PC, and Xbox Series X/S platforms.</p>
+                        <p>Genres: Racing video game, Action game</p>
+                        <p>Price : LKR 16000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-heading">Battlefield 2042</div>
+            <div class="image-container">
+                <img src="Images/img3.jpg" alt="Image 3">
+                <div class="hover-text">
+                    <h1>Battlefield 2042</h1>
+                    <div class="hover-paragraph">
+                        <p>Battlefield 2042 is a first-person shooter developed by DICE and published by Electronic Arts. A futuristic FPS with 128-player battles, dynamic weather, massive maps, Specialists, vehicles, and stunning Frostbite-engine graphics.</p>
+                        <p>Released date: November 19, 2021</p>
+                        <p>Platform: Microsoft Windows, PlayStation 4, PlayStation 5, Xbox One, and Xbox Series X/S</p>
+                        <p>Genres: First-person shoot, Adventure game</p>
+                        <p>Price: 16500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!--Footer-->
+    <footer>
+        <div class="footer-logo">
+            <img src="Images/Logo.jpg" alt="Logo" width="100">
+        </div>
+        <div class="footer-content">
+            <h3>About Us</h3>
+            <p>GameVerse is your go-to hub for all things gaming! From news and reviews to tips and a vibrant community, we’re here to connect gamers worldwide. Join us and level up your gaming journey!</p>
+
+            <h3>Contact Us</h3>
+            <ul>
+                <li>E-mail:
+                <a href="mailto:laksanpushpakumar@gmail.com">laksanpushpakumar@gmail.com</a>
+                </li>
+                <li>Telephone:
+                <a href="tel:+94714385894">+94 71 438 5894</a>
+                </li>
+                <li>Location:
+                <a href="https://maps.app.goo.gl/zYvLhbT9u4DFDtjs7">Location</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us On</h3>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+                <a href="https://www.instagram.com/_._lakxhan_._/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100083904106775" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

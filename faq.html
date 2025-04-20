@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - FAQs</title>
+    
+    <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/faq.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<!--Header-->
+    <header>
+        <div class="navbar">
+            <img src="Images/Logo.jpg" alt="Logo" class="logo">
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="upcoming-games.html">Upcoming Games</a>
+                <a href="consoles.html">Consoles</a>
+                <a href="gaming-peripherals.html">Gaming Peripherals</a>
+                <!-- Components with Clickable Dropdown -->
+                <div class="dropdown">
+                    <a href="components.html" class="dropbtn" onclick="toggleDropdown(event)">Components</a>
+                    <div class="dropdown-content" id="dropdownMenu">
+                        <a href="processors.html">Processors</a>
+                        <a href="graphics.html">Graphic Cards</a>
+                        <a href="motherboards.html">Motherboards</a>
+                        <a href="memory.html">Memory (RAM)</a>
+                        <a href="storage.html">Storage Devices</a>
+                    </div>
+                </div>
+                <a href="about.html">About Us & Contact Us</a>
+                <a href="faq.html">FAQs</a>
+            </div>
+            <!-- Top Right Icons in Header -->
+            <div class="header-icons">
+                <a href="favorites.html" class="header-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="header-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="FAQs.js"></script>
+    </header>
+
+<!--Main-->
+    <main>
+        <div class="container">
+            <h1>Welcome to our GameVerse FAQ</h1>
+            
+            <div class="intro">
+                <p>Our FAQ section is designed to address the most common queries from our players. Whether you’re
+                    new to our games or a seasoned gamer, we’ve got you covered. From platform availability and discounts
+                    or purchasing, you’ll find quick and clear answers to help enhance your gaming experience.</p>
+                <p>For any technical issues, account-related concerns, or feedback, our support team is here to assist. Drop
+                    the email address we’ll be eager to hear your thoughts on our games, so feel free to share feedback or
+                    report bugs to help us improve.</p>
+                <p>Stay up-to-date with our latest releases, updates, and promotions by following us on social media or
+                    subscribing to our newsletter. Whether you’re exploring single-player adventures, diving into
+                    multiplayer action, or testing beta versions, we’re dedicated to ensuring you have an incredible gaming
+                    journey!</p>
+            </div>
+
+            <div class="paragraphs">
+                <h2>1. What platforms are your games available on ?</h2>
+                <p>Our games are available on multiple platforms, including PC, PlayStation, Xbox, and Nintendo Switch.
+                    Some titles are also available on mobile devices (iOS and Android). Check each game's page for specific
+                    platform availability.</p>
+
+                <h2>2. How often do you release updates or new content for your games ?</h2>
+                <p>We’re committed to keeping our games fresh and exciting! Updates, including bug fixes and new
+                    content, are released regularly. Follow us on social media or sign up for our newsletter to stay informed
+                    about upcoming updates and releases.</p>
+
+                <h2>3. Can I refund a game I purchased ?</h2>
+                <p>Refund policies depend on the platform where you purchased the game. Check the refund guidelines on
+                    Steam, PlayStation Store, Xbox Store, or other relevant platforms for digital purchases. If you bought the
+                    game from our website, refunds are available within 14 days of purchase if the game has not been
+                    played for more than 2 hours.</p>
+
+                <h2>4. Do you offer discounts or promotions on your games ?</h2>
+                <p>Yes! We frequently run sales and promotions. For the latest deals and announcements, check our
+                    website, and follow us on social media.</p>
+
+                <h2>5. What are the minimum system requirements for your PC games ?</h2>
+                <p>Each game has different system requirements. You can find the minimum and recommended
+                    specifications on the respective game’s page. Make sure to compare them with your system’s specs
+                    before purchasing.</p>
+            </div>
+
+            <div class="form-section">
+                <h2>Ask Something ?</h2>
+                <form onsubmit="handleSubmit(event)">
+                    <textarea id="question" rows="4" placeholder="Type your question here..." required></textarea>
+                    <input id="email" type="email" placeholder="E-Mail" required>
+                    <input id="contact" type="text" placeholder="Contact" required>
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="thank-you">Thank You For Submitting!!</div>
+            </div>
+        </div>
+    </main>
+
+<!--Footer-->
+    <footer>
+        <div class="footer-logo">
+            <img src="Images/Logo.jpg" alt="Logo" width="100">
+        </div>
+        <div class="footer-content">
+            <h3>About Us</h3>
+            <p>GameVerse is your go-to hub for all things gaming! From news and reviews to tips and a vibrant community, we’re here to connect gamers worldwide. Join us and level up your gaming journey!</p>
+
+            <h3>Contact Us</h3>
+            <ul>
+                <li>E-mail:
+                <a href="mailto:laksanpushpakumar@gmail.com">laksanpushpakumar@gmail.com</a>
+                </li>
+                <li>Telephone:
+                <a href="tel:+94714385894">+94 71 438 5894</a>
+                </li>
+                <li>Location:
+                <a href="https://maps.app.goo.gl/zYvLhbT9u4DFDtjs7">Location</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us On</h3>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+                <a href="https://www.instagram.com/_._lakxhan_._/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100083904106775" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

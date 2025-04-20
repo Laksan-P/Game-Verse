@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - Upcoming Games</title>
+
+    <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/upcoming-games.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<!--Header-->
+    <header>
+        <div class="navbar">
+            <img src="Images/Logo.jpg" alt="Logo" class="logo">
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="upcoming-games.html">Upcoming Games</a>
+                <a href="consoles.html">Consoles</a>
+                <a href="gaming-peripherals.html">Gaming Peripherals</a>
+                <!-- Components with Clickable Dropdown -->
+                <div class="dropdown">
+                    <a href="components.html" class="dropbtn" onclick="toggleDropdown(event)">Components</a>
+                    <div class="dropdown-content" id="dropdownMenu">
+                        <a href="processors.html">Processors</a>
+                        <a href="graphics.html">Graphic Cards</a>
+                        <a href="motherboards.html">Motherboards</a>
+                        <a href="memory.html">Memory (RAM)</a>
+                        <a href="storage.html">Storage Devices</a>
+                    </div>
+                </div>
+                <a href="about.html">About Us & Contact Us</a>
+                <a href="faq.html">FAQs</a>
+            </div>
+            <!-- Top Right Icons in Header -->
+            <div class="header-icons">
+                <a href="favorites.html" class="header-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="header-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </header>
+
+<!--Main-->
+    <main>
+        <div class="text-paragraph">
+            <p>GameVerse, a leading video game store, is dedicated to staying at the forefront of the ever-evolving gaming industry by consistently offering the latest titles and gaming experiences. By fostering strong relationships with developers and distributors, GameVerse ensures that they have early access to new releases, allowing customers to enjoy the newest games as soon as they hit the shelves. The store embraces both physical and digital formats, giving gamers the flexibility to choose between hard copies or digital downloads, catering to the diverse preferences of its clientele.</p>
+            <p>By prioritizing customer experience and staying connected with the gaming community, GameVerse positions itself as a trusted hub for gaming enthusiasts seeking the latest and greatest in the gaming world. The store's commitment to innovation and service ensures that it remains a go-to destination for avid gamers.</p>
+        </div>
+
+        <div class="image-column">
+            <div class="image-container">
+                <img src="Images/Assassins Creed Shadows.jpg" alt="Image 1">
+                <div class="hover-text">
+                    <h1>Assassin's Creed Shadows</h1>
+                    <div class="hover-paragraph">
+                        <p>Assassin's Creed Shadows is an upcoming action role-playing game developed by Ubisoft Quebec and published by Ubisoft.</p>
+                        <p>Release date: February 14, 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="Images/Ghost of Yōtei.jpg" alt="Image 2">
+                <div class="hover-text">
+                    <h1>Ghost of Yōtei</h1>
+                    <div class="hover-paragraph">
+                        <p>"Ghost of Yōtei" is an upcoming action-adventure game developed by Sucker Punch Productions and published by Sony Interactive Entertainment. It is a standalone sequel to the 2020 “Ghost of Tsushima” game.</p>
+                        <p>Released date: 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="Images/GTA VI.jpg" alt="Image 3">
+                <div class="hover-text">
+                    <h1>Grand Theft Auto VI (GTA 6)</h1>
+                    <div class="hover-paragraph">
+                        <p>Grand Theft Auto VI (GTA 6) is the upcoming installment in Rockstar Games' acclaimed open-world action-adventure series. GTA 6 is set in the fictional state of Leonida, inspired by Florida, featuring the vibrant city of Vice City, a reimagined version of Miami</p>
+                        <p>Released date: 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!--Footer-->
+    <footer>
+        <div class="footer-logo">
+            <img src="Images/Logo.jpg" alt="Logo" width="100">
+        </div>
+        <div class="footer-content">
+            <h3>About Us</h3>
+            <p>GameVerse is your go-to hub for all things gaming! From news and reviews to tips and a vibrant community, we’re here to connect gamers worldwide. Join us and level up your gaming journey!</p>
+
+            <h3>Contact Us</h3>
+            <ul>
+                <li>E-mail:
+                <a href="mailto:laksanpushpakumar@gmail.com">laksanpushpakumar@gmail.com</a>
+                </li>
+                <li>Telephone:
+                <a href="tel:+94714385894">+94 71 438 5894</a>
+                </li>
+                <li>Location:
+                <a href="https://maps.app.goo.gl/zYvLhbT9u4DFDtjs7">Location</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us On</h3>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+                <a href="https://www.instagram.com/_._lakxhan_._/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100083904106775" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
